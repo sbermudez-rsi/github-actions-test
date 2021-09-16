@@ -4,8 +4,12 @@ on: [push]
 
 jobs:
   run-github-actions:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest    
     steps:
+      - name: List Files
+        run: |
+          pwd
+          ls
       - name: Simple JS Actions
         id: greet
         uses: sbermudez-rsi/hello-world-javascript-action@main
