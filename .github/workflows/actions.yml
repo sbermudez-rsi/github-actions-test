@@ -22,7 +22,7 @@ jobs:
         run: |
           pwd
           ls -a
-      - name: Simple JS Actions
+      - name: Simple JS Actions.
         id: greet
         uses: sbermudez-rsi/hello-world-javascript-action@main
         with: 
