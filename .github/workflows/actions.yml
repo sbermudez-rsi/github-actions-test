@@ -1,5 +1,6 @@
 name: Actions Workflow
 
+on:
   push:
   pull_request:
     types: [closed, assigned, opened, reopened]
@@ -24,7 +25,7 @@ jobs:
         run: |
           pwd
           ls -a
-      - name: Simple JS Actions
+      - name: Simple JS Actions.
         id: greet
         uses: sbermudez-rsi/hello-world-javascript-action@main
         with: 
