@@ -1,9 +1,9 @@
 name: Actions Workflow
 
 on:
-  pull_request:
+  push:
     branches:
-      - master
+      - master1
       - 'feature/*' # matches feature/featA, feature/featB, doesn't match future/featC/a
       - 'feature/**' # match future/featC/a
       - '!feature/featC' # Ignore this branch
