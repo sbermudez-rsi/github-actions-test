@@ -1,5 +1,5 @@
 name: matrix
-on: push
+on: pull_request
 
 jobs:
   node-version:
@@ -15,7 +15,7 @@ jobs:
           - os: ubuntu-latest          
             node_version: 6
           - os: macos-latest
-            node_version: [6,10]       
+            node_version: 10
       #fail-fast: true
     runs-on: ${{matrix.os}}
     env: 
